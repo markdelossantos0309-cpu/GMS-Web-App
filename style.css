@@ -1,0 +1,67 @@
+/* --- GLOBAL THEME --- */
+:root {
+  --sidebar-bg: #0f172a;
+  --header-bg: #1e293b;
+  --accent: #38bdf8;
+  --dark-bg: #020617;
+  --sidebar-width: 280px;
+  --header-height: 70px;
+}
+
+body {
+  background-color: var(--dark-bg) !important;
+  color: #f8fafc;
+  font-family: "Inter", sans-serif;
+  margin: 0;
+}
+
+/* --- LOGIN SCREEN FIX --- */
+#login-screen {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--dark-bg);
+  position: fixed;
+  z-index: 9999;
+}
+
+.login-box {
+  background: #0f172a;
+  padding: 2.5rem;
+  border-radius: 20px;
+  width: 380px;
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+/* --- INPUT FIELDS --- */
+.form-control {
+  background-color: transparent !important;
+  border: 1px solid #334155 !important;
+  color: white !important;
+}
+
+.form-control:focus {
+  border-color: var(--accent) !important;
+  box-shadow: 0 0 0 0.25rem rgba(56, 189, 248, 0.1) !important;
+}
+
+/* --- BUTTON --- */
+.btn-info {
+  background-color: var(--accent) !important;
+  border: none;
+  color: #0f172a !important;
+}
+
+/* --- SIDEBAR --- */
+.sidebar {
+  width: var(--sidebar-width);
+  height: 100vh;
+  background: var(--sidebar-bg);
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+}
